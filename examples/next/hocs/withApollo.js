@@ -11,8 +11,8 @@ export default withApollo(
     return new ApolloClient({
       ssrMode: true,
       link: createHttpLink({
-        uri: '/api/graphql',
-       // uri: 'http://localhost:3000/api/graphql',
+        // uri: '/api/graphql',
+        uri: 'http://localhost:3001/api/graphql',
         credentials: 'same-origin',
         headers: {
           cookie: headers?.cookie
