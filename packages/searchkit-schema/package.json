@@ -25,14 +25,14 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rm -rf lib; tsc --module es2015 --target es5 --outDir lib/esm;tsc --module commonjs --target es5 --outDir lib/cjs",
+    "build": "rm -rf lib; tsc",
     "dev": "rm -rf lib; tsc --watch",
     "test": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles",
     "coverage": "jest --coverage"
   },
   "dependencies": {
     "@elastic/elasticsearch": "7.13.0",
-    "@searchkit/sdk": "https://gitpkg.now.sh/weslleylc/searchkit/packages/searchkit-sdk?next&scripts.postinstall=%26%26%20yarn%20install%20--ignore-scripts%20%26%26%20yarn%20run%20build",
+    "@searchkit/sdk": "https://gitpkg.now.sh/weslleylc/searchkit/packages/searchkit-sdk?next&scripts.postinstall=%26%26%20yarn%20run%20build",
     "dataloader": "^2.0.0",
     "graphql-tag": "^2.10.3",
     "lodash": "^4.17.21"
