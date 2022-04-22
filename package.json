@@ -1,6 +1,7 @@
 {
   "name": "searchkit",
   "private": true,
+  "version": "0.0.1",
   "workspaces": [
     "packages/*",
     "examples/next"
