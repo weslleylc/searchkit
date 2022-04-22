@@ -64,12 +64,12 @@ export default function RequestBodyBuilder(
   if (combinedBaseFilters.length) {
     if (query.bool) {
       Object.assign(query.bool, {
-        filter: query.bool.filter?.length
+        must: query.bool.filter?.length
           ? [].concat(query.bool.filter, combinedBaseFilters)
           : combinedBaseFilters
       })
     } else {
-      Object.assign(query, { bool: { filter: combinedBaseFilters } })
+      Object.assign(query, { bool: { must: combinedBaseFilters } })
     }
   }
 
