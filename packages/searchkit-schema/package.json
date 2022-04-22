@@ -25,7 +25,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rm -rf lib; tsc",
+    "build": "rm -rf lib; tsc --module es2015 --target es5 --outDir lib/esm;tsc --module commonjs --target es5 --outDir lib/cjs",
     "dev": "rm -rf lib; tsc --watch",
     "test": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles",
     "coverage": "jest --coverage"

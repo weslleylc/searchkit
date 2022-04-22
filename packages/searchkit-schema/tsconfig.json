@@ -6,6 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "skipLibCheck": true,
     "rootDir": "src",
     "outDir": "lib",
     "strict": false,
